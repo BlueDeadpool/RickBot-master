@@ -33,7 +33,9 @@ client.on('message', message => {
         } else {
         message.channel.sendMessage(args.join(" ").substring(5));
       }
-    }
+    }  else {
+		  message.channel.sendMessage("Y-you're not Ricktastic, you bureaucrat.");
+	  }
   }
 });
 
